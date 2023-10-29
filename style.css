@@ -1,0 +1,112 @@
+/* CSS existente */
+
+/* ... (seu CSS anterior) ... */
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    margin: 0;
+}
+
+.header {
+    background-color: #F34949;
+    color: #FFF;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.menu-tabs {
+    text-align: center;
+    background-color: #45C3D3;
+    padding: 10px 0;
+}
+
+.menu-tab {
+    display: inline-block;
+    background: #45C3D3;
+    color: #FFF;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.menu-tab.active {
+    background: #F34949;
+}
+
+.menu-content {
+    background-color: #FFF;
+    padding: 20px;
+}
+
+.menu-category {
+    display: none;
+}
+
+.menu-category.active {
+    display: block;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.menu-list li {
+    width: 250px;
+    padding: 10px;
+    margin: 10px;
+    background: #FFF;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.menu-list li:hover {
+    transform: scale(1.02);
+}
+
+.menu-list img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.menu-list h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.menu-list p {
+    font-size: 14px;
+    color: #777;
+    margin: 0;
+}
+
+.add-to-cart {
+    display: block;
+    background: #45C3D3;
+    color: #FFF;
+    text-align: center;
+    padding: 8px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.add-to-cart:hover {
+    background: #F34949;
+}

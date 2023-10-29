@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aba de Feedback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Carrinho de Compras</h1>
+    </header>
+    <manin><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="feedback-tab">
+            <div class="tab-content">
+                <span class="close-btn" onclick="toggleFeedbackTab()">&times;</span>
+                <h2>Deixe seu feedback</h2><br><br><br><br>
+                <textarea id="feedback-text" name="feedback" placeholder="Escreva seu feedback aqui" rows="5" class="feedback"></textarea><br>
+                <button onclick="submitFeedback()">Enviar</button>
+            </div>
+            <div class="tab-button" onclick="toggleFeedbackTab()">
+
+            </div>
+        </div>
+
+    </manin>
+    <script src="java.js"></script>
+    <script>
+        function toggleFeedbackTab() {
+            const tabContent = document.querySelector('.tab-content');
+            tabContent.style.display = (tabContent.style.display === 'none' || tabContent.style.display === '') ? 'flex' : 'none';
+        }
+
+        function submitFeedback() {
+            const feedbackText = document.getElementById('feedback-text').value;
+            // Aqui você pode adicionar código para enviar o feedback para o servidor
+            alert(`Feedback enviado: ${feedbackText}`);
+            document.getElementById('feedback-text').value = ''; // Limpa o campo de texto
+        }
+    </script>
+    <br><br>
+    <br<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <footer>
+            <p>&copy; 2023 Cantina da Jack. Todos os direitos reservados.</p>
+        </footer>
+</body>
+
+</html>

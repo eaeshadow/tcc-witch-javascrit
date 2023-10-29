@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cantina da Jack</title>
+    <style>
+        body {
+            background-color: #F34949;
+            /* Cor de fundo chamativa */
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        
+        .container {
+            margin: 10% auto;
+            max-width: 400px;
+            padding: 20px;
+            background-color: #FFF;
+            /* Cor de fundo do conteúdo */
+            border-radius: 10px;
+        }
+        
+        .logo {
+            width: 200px;
+            height: 200px;
+            margin: 20px auto;
+            display: block;
+        }
+        
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #000;
+            /* Cor do texto */
+        }
+        
+        .subtitle {
+            font-size: 16px;
+            color: #000;
+            /* Cor do texto */
+            margin-bottom: 20px;
+        }
+        
+        .button {
+            background-color: #45C3D3;
+            /* Cor do botão */
+            color: #FFF;
+            /* Cor do texto do botão */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="logo.png" alt="Logo Cantina da Jack" class="logo">
+        <h1 class="title">Bem-vindo à Cantina da Jack</h1>
+        <p class="subtitle">Faça seu pedido e dê seu feedback</p>
+        <button class="button" onclick="fazerPedido()">Faça Seu Pedido</button>
+        <button class="button" onclick="darFeedback()">Deixe seu Feedback</button>
+    </div>
+
+    <script>
+        function fazerPedido() {
+
+            window.location.href = "cardapio.html";
+        }
+
+        function darFeedback() {
+            // Adicione a lógica para direcionar os usuários para a página de feedback.
+            // Exemplo: window.location.href = "pagina_de_feedback.html";
+        }
+    </script>
+</body>
+
+</html>

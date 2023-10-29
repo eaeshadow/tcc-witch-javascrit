@@ -1,0 +1,72 @@
+/* Estilos gerais para o cardápio */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* Cor de fundo suave */
+    color: #333; /* Cor do texto principal */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; /* Cor de fundo do cardápio */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+h1 {
+    text-align: center;
+    color: #e74c3c; /* Cor do título principal */
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #3498db; /* Cor dos títulos das categorias */
+    margin-top: 20px;
+    font-size: 24px;
+    border-bottom: 2px solid #3498db; /* Linha sob o título */
+    padding-bottom: 10px;
+}
+
+/* Estilos para a lista de itens do menu */
+.menu-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.menu-list li {
+    width: calc(33.33% - 20px); /* 3 colunas com espaçamento entre os itens */
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff; /* Cor de fundo dos itens */
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: background-color 0.3s ease; /* Animação de transição suave */
+}
+
+.menu-list li:hover {
+    background-color: #f2f2f2; /* Cor de fundo quando o mouse passa por cima */
+}
+
+/* Estilos para imagens */
+.menu-list img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+/* Estilos para títulos e preços */
+.menu-list h3 {
+    font-size: 18px;
+    color: #333; /* Cor do texto do item */
+}
+
+.menu-list p {
+    font-size: 14px;
+    color: #777; /* Cor do texto do preço */
+}
+

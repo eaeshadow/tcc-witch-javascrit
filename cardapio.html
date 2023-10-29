@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script async src="carrinho.js"></script>
+    <title>Cantina da Jack</title>
+</head>
+
+<body>
+    <header class="header">
+        <img src="logo.png" alt="Cantina da Jack">
+        <h1>Cantina da Jack</h1>
+        <p>Faça seu pedido e dê seu feedback</p>
+    </header>
+
+    <div class="menu-tabs">
+        <div class="menu-tab" id="tab-balas">Balas</div>
+        <div class="menu-tab" id="tab-bebidas">Bebidas</div>
+        <div class="menu-tab" id="tab-doces">Doces</div>
+        <div class="menu-tab" id="tab-geladinho">Geladinho</div>
+        <div class="menu-tab" id="tab-carrinho">Carrinho</div>
+    </div>
+
+    <div class="menu-content">
+        <div class="menu-category balas" id="category-balas">
+            <ul class="menu-list">
+                <li>
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.AUxOl0Zza_uc9TCZMaHQrAAAAA&pid=Api&P=0&h=180"
+                        alt="Bala de Menta">
+                    <h3>Bala de Menta</h3>
+                    <p>Preço: 10 centavos</p>
+                    <label for="qty-menta">Quantidade:</label>
+                    <input type="number" id="qty-menta" name="qty-menta" value="0" min="0">
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </li>
+                <li>
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.7O4PRIYwfoAJE2G9-l5m1AHaFj&pid=Api&P=0&h=180"
+                        alt="Bala de Yogurte">
+                    <h3>Bala de Yogurte</h3>
+                    <p>Preço: 20 centavos</p>
+                    <label for="qty-yogurte">Quantidade:</label>
+                    <input type="number" id="qty-yogurte" name="qty-yogurte" value="0" min="0">
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </li>
+                <li>
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.XUlvFvt82rUQEcC_2LEn4wHaHa&pid=Api&P=0&h=180"
+                        alt="7 Belo">
+                    <h3>7 Belo</h3>
+                    <p>Preço: 20 centavos</p>
+                    <label for="qty-7-belo">Quantidade:</label>
+                    <input type="number" id="qty-7-belo" name="qty-7-belo" value="0" min="0">
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </li>
+                <li>
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.H-mtxsVfnr-X6a0tEsdb6wHaER&pid=Api&P=0&h=180"
+                        alt="Bubbaloo">
+                    <h3>Bubbaloo</h3>
+                    <p>Preço: 30 centavos</p>
+                    <label for="qty-bubbaloo">Quantidade:</label>
+                    <input type="number" id="qty-bubbaloo" name="qty-bubbaloo" value="0" min="0">
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </li>
+                <li>
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.lMb3BqmBYhYiQPk8LnEcMwHaFj&pid=Api&P=0&h=180"
+                        alt="Plutonita">
+                    <h3>Plutonita</h3>
+                    <p>Preço: 50 centavos</p>
+                    <label for="qty-plutonita">Quantidade:</label>
+                    <input type="number" id="qty-plutonita" name="qty-plutonita" value="0" min="0">
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </li>
+                <li>
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.GHMSKxVU80BcCyIk_ZjcCQHaHa&pid=Api&P=0&h=180"
+                        alt="Poosh">
+                    <h3>Poosh</h3>
+                    <p>Preço: 50 centavos</p>
+                    <label for="qty-poosh">Quantidade:</label>
+                    <input type="number" id="qty-poosh" name="qty-poosh" value="0" min="0">
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </li>
+                <li>
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.fPKyhwhXuYSioH5oeHFYmgAAAA&pid=Api&P=0&h=180"
+                        alt="Trident">
+                    <h3>Trident</h3>
+                    <p>Preço: 3,50 reais</p>
+                    <label for="qty-trident">Quantidade:</label>
+                    <input type="number" id="qty-trident" name="qty-trident" value="0" min="0">
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </li>
+                <li>
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.mWJslKT4H-ZWmjO8T7x23QHaDf&pid=Api&P=0&h=180"
+                        alt="Halls">
+                    <h3>Halls</h3>
+                    <p>Preço: 2 reais</p>
+                    <label for="qty-halls">Quantidade:</label>
+                    <input type="number" id="qty-halls" name="qty-halls" value="0" min="0">
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </li>
+                <li>
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.PaobU1z3eNQlzD1hCSxkgwHaEo&pid=Api&P=0&h=180"
+                        alt="Mentos">
+                    <h3>Mentos</h3>
+                    <p>Preço: 2 reais</p>
+                    <label for="qty-mentos">Quantidade:</label>
+                    <input type="number" id="qty-mentos" name="qty-mentos" value="0" min="0">
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </li>
+                <li>
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.kQIp8nzQtTfJHsI6x_uKyQAAAA&pid=Api&P=0&h=180"
+                        alt="Azedinho">
+                    <h3>Azedinho</h3>
+                    <p>Preço: 2,50 reais</p>
+                    <label for="qty-azedinho">Quantidade:</label>
+                    <input type="number" id="qty-azedinho" name="qty-azedinho" value="0" min="0">
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="menu-category bebidas" id="category-bebidas">
+            <ul class="menu-list">
+                <li>
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.pOa4tG6PFeGQZOHlcjrimgHaHa&pid=Api&P=0&h=180"
+                        alt="Kuat 2 Litros">
+                    <h3>Kuat 2 Litros</h3>
+                    <p>Preço: 13 reais</p>
+                    <label for="qty-kuat">Quantidade:</label>
+                    <input type="number" id="qty-kuat" name="qty-kuat" value="0" min="0">
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </li>
+                <li>
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.bk4TA6ZdBhVeekQe2bpfGAHaHa&pid=Api&P=0&h=180"
+                        alt="Coca-Cola 2 Litros">
+                    <h3>Coca-Cola 2 Litros</h3>
+                    <p>Preço: 15 reais</p>
+                    <label for="qty-coca">Quantidade:</label>
+                    <input type="number" id="qty-coca" name="qty-coca" value="0" min="0">
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </li>
+                <li>
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.q36xPmGtIfM4K4bsF8SHawAAAA&pid=Api&P=0&h=180"
+                        alt="Mantiqueira 2 Litros">
+                    <h3>Mantiqueira 2 Litros</h3>
+                    <p>Preço: 12 reais</p>
+                    <label for="qty-mantiqueira">Quantidade:</label>
+                    <input type="number" id="qty-mantiqueira" name="qty-mantiqueira" value="0" min="0">
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </li>
+                <li>
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.pAr29oGBm5zLMjtTCRMItQHaH1&pid=Api&P=0&h=180"
+                        alt="Coca-Cola 1 Litro">
+                    <h3>Coca-Cola 1 Litro</h3>
+                    <p>Preço: 10 reais</p>
+                    <label for="qty-coca-1litro">Quantidade:</label>
+                    <input type="number" id="qty-coca-1litro" name="qty-coca-1litro" value="0" min="0">
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </li>
+                <li>
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.ulycxNW4XlUb6fe4--ovFAHaNn&pid=Api&P=0&h=180"
+                        alt="Caçulinha de Guaraná Antártica">
+                    <h3>Caçulinha de Guaraná</h3>
+                    <p>Preço: 4 reais</p>
+                    <label for="qty-caculinha-guarana">Quantidade:</label>
+                    <input type="number" id="qty-caculinha-guarana" name="qty-caculinha-guarana" value="0" min="0">
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </li>
+                <li>
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.bomVUynE8PUXG61QDnHjqAHaNn&pid=Api&P=0&h=180"
+                        alt="Caçulinha de Coca-Cola">
+                    <h3>Caçulinha de Coca-Cola</h3>
+                    <p>Preço: 4 reais</p>
+                    <label for="qty-caculinha-coca">Quantidade:</label>
+                    <input type="number" id="qty-caculinha-coca" name="qty-caculinha-coca" value="0" min="0">
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </li>
+                <li>
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.WmPfh7fB5kY-rF3wHNx6NwHaHa&pid=Api&P=0&h=180"
+                        alt="Suco Tropical de Laranja 400ml">
+                    <h3>Suco Tropical de Laranja</h3>
+                    <p>Preço: 8 reais</p>
+                    <label for="qty-suco-laranja">Quantidade:</label>
+                    <input type="number" id="qty-suco-laranja" name="qty-suco-laranja" value="0" min="0">
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </li>
+                <li>
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.WmPfh7fB5kY-rF3wHNx6NwHaHa&pid=Api&P=0&h=180"
+                        alt="Suco Tropical de Maracujá 400ml">
+                    <h3>Suco Tropical de Maracujá</h3>
+                    <p>Preço: 8 reais</p>
+                    <label for="qty-suco-maracuja">Quantidade:</label>
+                    <input type="number" id="qty-suco-maracuja" name="qty-suco-maracuja" value="0" min="0">
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </li>
+                <li>
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.WmPfh7fB5kY-rF3wHNx6NwHaHa&pid=Api&P=0&h=180"
+                        alt="Suco Tropical de Goiaba 400ml">
+                    <h3>Suco Tropical de Goiaba</h3>
+                    <p>Preço: 8 reais</p>
+                    <label for="qty-suco-goiaba">Quantidade:</label>
+                    <input type="number" id="qty-suco-goiaba" name="qty-suco-goiaba" value="0" min="0">
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </li>
+                <li>
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.WmPfh7fB5kY-rF3wHNx6NwHaHa&pid=Api&P=0&h=180"
+                        alt="Suco Tropical de Guaraná com Açaí 400ml">
+                    <h3>Suco Tropical de Guaraná com Açaí</h3>
+                    <p>Preço: 8 reais</p>
+                    <label for="qty-suco-guarana-acai">Quantidade:</label>
+                    <input type="number" id="qty-suco-guarana-acai" name="qty-suco-guarana-acai" value="0" min="0">
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </li>
+                <li>
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.WmPfh7fB5kY-rF3wHNx6NwHaHa&pid=Api&P=0&h=180"
+                        alt="Suco Tropical de Abacaxi 400ml">
+                    <h3>Suco Tropical de Abacaxi</h3>
+                    <p>Preço: 8 reais</p>
+                    <label for="qty-suco-abacaxi">Quantidade:</label>
+                    <input type="number" id="qty-suco-abacaxi" name="qty-suco-abacaxi" value="0" min="0">
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </li>
+                <li>
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.WmPfh7fB5kY-rF3wHNx6NwHaHa&pid=Api&P=0&h=180"
+                        alt="Suco Tropical de Uva 400ml">
+                    <h3>Suco Tropical de Uva</h3>
+                    <p>Preço: 8 reais</p>
+                    <label for="qty-suco-uva">Quantidade:</label>
+                    <input type="number" id="qty-suco-uva" name="qty-suco-uva" value="0" min="0">
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="menu-category doces" id="category-doces">
+            <ul class="menu-list">
+                <li>
+                    <img src="https://tse3.explicit.bing.net/th?id=OIP.no2S7L-DeGBqkBkndIU2wgHaEK&pid=Api&P=0&h=180"
+                        alt="Doce de Leite">
+                    <h3>Doce de Leite</h3>
+                    <p>Preço: 5 reais</p>
+                    <label for="qty-doce-de-leite">Quantidade:</label>
+                    <input type="number" id="qty-doce-de-leite" name="qty-doce-de-leite" value="0" min="0">
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </li>
+                <li>
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.N0gY2gpJxeuTCyND3lycXAHaDq&pid=Api&P=0&h=180"
+                        alt="Barra de Chocolate">
+                    <h3>Barra de Chocolate</h3>
+                    <p>Preço: 10 reais</p>
+                    <label for="qty-barra-de-chocolate">Quantidade:</label>
+                    <input type="number" id="qty-barra-de-chocolate" name="qty-barra-de-chocolate" value="0" min="0">
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </li>
+                <li>
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.WjBnESjz5PbYy9r4t428ugHaE9&pid=Api&P=0&h=180"
+                        alt="Pé de Moleque">
+                    <h3>Pé de Moleque</h3>
+                    <p>Preço: 5 reais</p>
+                    <label for="qty-pe-de-moleque">Quantidade:</label>
+                    <input type="number" id="qty-pe-de-moleque" name="qty-pe-de-moleque" value="0" min="0">
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="menu-category geladinho" id="category-geladinho">
+            <ul class="menu-list">
+                <li>
+                    <img src="https://tse2.explicit.bing.net/th?id=OIP.ELYrRo1Z-jIb3eI4E6vcgQHaE8&pid=Api&P=0&h=180"
+                        alt="Geladinho de Chocolate">
+                    <h3>Geladinho de Chocolate</h3>
+                    <p>Preço: 2 reais</p>
+                    <label for="qty-geladinho-chocolate">Quantidade:</label>
+                    <input type="number" id="qty-geladinho-chocolate" name="qty-geladinho-chocolate" value="0" min="0">
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </li>
+                <li>
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.u54RkVh3Kt011EBP-_vRZwHaEK&pid=Api&P=0&h=180"
+                        alt="Geladinho de Morango">
+                    <h3>Geladinho de Morango</h3>
+                    <p>Preço: 2 reais</p>
+                    <label for="qty-geladinho-morango">Quantidade:</label>
+                    <input type="number" id="qty-geladinho-morango" name="qty-geladinho-morango" value="0" min="0">
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </li>
+                <li>
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.SfNnwWi-AjuRZr8CCQwpQwHaE6&pid=Api&P=0&h=180"
+                        alt="Geladinho de Uva">
+                    <h3>Geladinho de Uva</h3>
+                    <p>Preço: 2 reais</p>
+                    <label for="qty-geladinho-uva">Quantidade:</label>
+                    <input type="number" id="qty-geladinho-uva" name="qty-geladinho-uva" value="0" min="0">
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </li>
+                <li>
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.jyR7s-kgCde_d-HLGHNi6QAAAA&pid=Api&P=0&h=180"
+                        alt="Geladinho de Laranja">
+                    <h3>Geladinho de Laranja</h3>
+                    <p>Preço: 2 reais</p>
+                    <label for="qty-geladinho-laranja">Quantidade:</label>
+                    <input type="number" id="qty-geladinho-laranja" name="qty-geladinho-laranja" value="0" min="0">
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </li>
+                <li>
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.oruiGaXl4qrlOcK-O7L5pQHaHa&pid=Api&P=0&h=180"
+                        alt="Geladinho de Maracujá">
+                    <h3>Geladinho de Maracujá</h3>
+                    <p>Preço: 2 reais</p>
+                    <label for="qty-geladinho-maracuja">Quantidade:</label>
+                    <input type="number" id="qty-geladinho-maracuja" name="qty-geladinho-maracuja" value="0" min="0">
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </li>
+                <li>
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.1UdzBHOcnoGh7erkDm9-PQHaHa&pid=Api&P=0&h=180"
+                        alt="Geladinho de Açaí">
+                    <h3>Geladinho de Açaí</h3>
+                    <p>Preço: 2 reais</p>
+                    <label for="qty-geladinho-acai">Quantidade:</label>
+                    <input type="number" id="qty-geladinho-acai" name="qty-geladinho-acai" value="0" min="0">
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </li>
+            </ul>
+        </div>
+            <div class="menu-category Carrinho" id="category-carrinho">
+                <ul class="menu-list">
+                    <li>
+                    <h3>Carrinho: </h3>
+                    <label for="total">Total: </label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <script src="java.js"></script>
+</body>
+
+</html>
